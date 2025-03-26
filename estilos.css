@@ -184,4 +184,18 @@ body {
     background-color: grey;
     width: 100%;
     display: flex;
+    margin-top: 3em;
+    justify-content: space-around;
 }
+
+    #principal .footer .content1 {
+        margin: 1em;
+    }
+
+    #principal .footer .content2 {
+        margin: 1em;
+    }
+
+    #principal .footer .content3 {
+        margin: 1em;
+    }
