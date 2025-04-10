@@ -10,6 +10,7 @@ body {
     display: flex;
     align-items: center;
     background-color: white;
+    width: 100%;
 
 }
 
@@ -184,4 +185,111 @@ body {
     background-color: grey;
     width: 100%;
     display: flex;
+}
+
+@media (width < 450px) {
+
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+
+        #principal .header {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1em;
+            height: 10vh;
+        }
+    
+        #principal .header .logo {
+            width: auto;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left center;
+            margin: 0;
+        }
+    
+        #principal .header .hamburgesa {
+            background-image: url(imagenes/hamburgesa.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 2.5em;
+            height: 2.5em;
+            margin: 0;
+        }
+    
+        #principal .header .menu ul {
+            display: none;
+        }
+    
+
+    #principal .header .logo {
+        width: 40%;
+        margin: 0;
+        height: 10vh;
+    }
+
+    #principal .header .hamburgesa {
+        background-image: url(imagenes/hamburgesa.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40%;
+        height: 10vh;
+        margin: 0;
+    }
+
+    #principal .hero h1 {
+        font-size: 1.3em;
+        padding: 0 1em;
+    }
+
+    #principal .hero p {
+        font-size: 1em;
+        padding: 0 1em;
+    }
+
+    #principal .hero .botones {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+
+    #principal .servicios {
+        grid-template-columns: 1fr;
+    }
+
+
+    #principal .faq .pregunta {
+        width: 90%;
+        font-size: 0.95em;
+    }
+
+
+    #principal .testimonios .content {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    #principal .testimonios .content .persona {
+        width: 80%;
+    }
+
+
+    #principal .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 1em;
+    }
 }
