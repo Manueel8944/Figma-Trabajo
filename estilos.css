@@ -185,6 +185,9 @@ body {
     background-color: grey;
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 4em;
+    gap: 4em;
 }
 
 @media (width < 450px) {
